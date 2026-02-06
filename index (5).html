@@ -1,22 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17923712997"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-17923712997');
-</script>
-
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>CareFIRST Surgery – Dr. V. Prefa & Partners | Witbank, Emalahleni</title>
-<meta name="description" content="CareFIRST Surgery – Open 24 hours. General consultations, chronic disease management, occupational health, minor surgeries & more. Walk-ins welcome. Witbank, Emalahleni, Mpumalanga."/>
+
+<!-- Primary Meta Tags -->
+<title>CareFIRST Surgery - 24/7 GP in Witbank, Emalahleni | Dr. V. Prefa & Partners</title>
+<meta name="title" content="CareFIRST Surgery - 24/7 GP in Witbank, Emalahleni | Dr. V. Prefa & Partners">
+<meta name="description" content="Open 24/7 GP practice in Witbank, Emalahleni, Mpumalanga. General consultations from R300. Chronic disease management, pregnancy sonars (50% off), minor surgeries, occupational health. All medical aids accepted. Walk-ins welcome. Call 081 549 7250."/>
+<meta name="keywords" content="GP Witbank, doctor Emalahleni, 24 hour doctor, general practitioner Mpumalanga, medical clinic Witbank, family doctor, chronic care, pregnancy sonar, after hours doctor, CareFIRST Surgery, Dr Prefa"/>
+<meta name="author" content="CareFIRST Surgery - Dr. V. Prefa & Partners">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://23396784.github.io/carefirst-surgery-/">
+<meta property="og:title" content="CareFIRST Surgery - 24/7 GP in Witbank, Emalahleni">
+<meta property="og:description" content="Open 24/7 GP practice. General consultations from R300. All medical aids accepted. Walk-ins welcome. Call 081 549 7250.">
+<meta property="og:site_name" content="CareFIRST Surgery">
+<meta property="og:locale" content="en_ZA">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary">
+<meta property="twitter:url" content="https://23396784.github.io/carefirst-surgery-/">
+<meta property="twitter:title" content="CareFIRST Surgery - 24/7 GP in Witbank, Emalahleni">
+<meta property="twitter:description" content="Open 24/7 GP practice in Witbank. General consultations, chronic care, pregnancy sonars. All medical aids accepted.">
+
+<!-- Geo Tags -->
+<meta name="geo.region" content="ZA-MP" />
+<meta name="geo.placename" content="Witbank, Emalahleni" />
+<meta name="geo.position" content="-25.8738;29.2340" />
+<meta name="ICBM" content="-25.8738, 29.2340" />
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://23396784.github.io/carefirst-surgery-/" />
+
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+<!-- Structured Data / Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "CareFIRST Surgery",
+  "description": "24/7 GP practice in Witbank, Emalahleni offering general consultations, chronic disease management, pregnancy sonars, minor surgeries and occupational health services.",
+  "url": "https://23396784.github.io/carefirst-surgery-/",
+  "telephone": "+27815497250",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Witbank",
+    "addressLocality": "Emalahleni",
+    "addressRegion": "Mpumalanga",
+    "addressCountry": "ZA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "-25.8738",
+    "longitude": "29.2340"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "priceRange": "R300-R450",
+  "medicalSpecialty": "General Practice",
+  "availableService": [
+    {
+      "@type": "MedicalProcedure",
+      "name": "General Consultation"
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Chronic Disease Management"
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Pregnancy Ultrasound"
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Minor Surgery"
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Occupational Health"
+    }
+  ]
+}
+</script>
 <style>
   :root {
     --teal:      #0d7a6f;
@@ -233,269 +317,268 @@
     font-weight:500;
   }
   .trust-icon {
-    width:38px; height:38px;
     background:rgba(255,255,255,.15);
+    width:42px; height:42px;
     border-radius:50%;
     display:flex; align-items:center; justify-content:center;
-    font-size:1.1rem;
+    font-size:1.2rem;
   }
 
   /* ─── SERVICES ─── */
   .services { background:var(--white); }
   .services-grid {
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:28px;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:24px;
   }
   .service-card {
     background:var(--cream);
     border-radius:var(--radius);
-    padding:34px 28px;
-    border:1px solid #e8eeec;
+    padding:32px 26px;
     transition:transform .3s, box-shadow .3s;
+    border:1px solid transparent;
   }
-  .service-card:hover { transform:translateY(-6px); box-shadow:var(--shadow); }
+  .service-card:hover {
+    transform:translateY(-4px);
+    box-shadow:var(--shadow);
+    border-color:#c8e6e0;
+  }
   .service-icon {
     width:52px; height:52px;
     background:var(--teal-pale);
-    border-radius:12px;
+    border-radius:14px;
     display:flex; align-items:center; justify-content:center;
-    font-size:1.6rem;
+    font-size:1.5rem;
     margin-bottom:18px;
   }
   .service-card h3 {
     font-family:'Playfair Display',serif;
-    font-size:1.2rem;
-    color:var(--dark);
-    margin-bottom:10px;
-  }
-  .service-card p { font-size:.92rem; color:var(--text-light); }
-
-  /* ─── PRICING ─── */
-  .pricing-grid {
-    display:flex; flex-wrap:wrap; justify-content:center; gap:32px;
-    max-width:850px;
-    margin:0 auto;
-  }
-  .price-card {
-    flex:1 1 300px;
-    max-width:380px;
-    background:var(--white);
-    border-radius:var(--radius);
-    padding:40px 32px;
-    box-shadow:0 2px 14px rgba(13,122,111,.06);
-    border:1px solid #e0e8e6;
-    position:relative;
-    transition:transform .3s, box-shadow .3s;
-  }
-  .price-card.featured {
-    border:2px solid var(--teal);
-    transform:scale(1.03);
-    box-shadow:0 8px 30px rgba(13,122,111,.14);
-  }
-  .price-badge {
-    position:absolute;
-    top:-14px; left:50%; transform:translateX(-50%);
-    background:var(--accent);
-    color:var(--dark);
-    font-size:.75rem;
-    font-weight:700;
-    padding:6px 16px;
-    border-radius:50px;
-    letter-spacing:.4px;
-  }
-  .price-card h3 {
-    font-family:'Playfair Display',serif;
-    font-size:1.35rem;
+    font-size:1.15rem;
     color:var(--dark);
     margin-bottom:8px;
   }
+  .service-card p {
+    font-size:.88rem;
+    color:var(--text-light);
+    line-height:1.55;
+  }
+
+  /* ─── PRICING ─── */
+  .pricing-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:24px;
+    max-width:860px;
+    margin:0 auto;
+  }
+  .price-card {
+    background:var(--white);
+    border-radius:var(--radius);
+    padding:40px 30px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    border:2px solid transparent;
+    transition:border-color .3s, transform .3s;
+    position:relative;
+  }
+  .price-card:hover { border-color:var(--teal-light); transform:translateY(-3px); }
+  .price-card.featured { border-color:var(--teal); }
+  .price-badge {
+    position:absolute; top:-14px; left:50%; transform:translateX(-50%);
+    background:var(--accent);
+    color:var(--white);
+    font-size:.72rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    padding:5px 18px;
+    border-radius:50px;
+  }
+  .price-card h3 {
+    font-family:'Playfair Display',serif;
+    font-size:1.2rem;
+    color:var(--mid);
+    margin-bottom:12px;
+  }
   .price-amount {
     font-family:'Playfair Display',serif;
-    font-size:1.6rem;
-    color:var(--teal);
-    margin-bottom:4px;
+    font-size:2.8rem;
+    color:var(--dark);
+    margin-bottom:6px;
   }
-  .price-note { font-size:.82rem; color:var(--text-light); margin-bottom:24px; }
-  .price-card ul { list-style:none; margin-bottom:28px; }
+  .price-amount span { font-size:1.1rem; color:var(--text-light); font-family:'DM Sans',sans-serif; }
+  .price-note { font-size:.82rem; color:var(--text-light); margin-bottom:22px; }
+  .price-card ul { list-style:none; text-align:left; margin-bottom:28px; }
   .price-card li {
-    padding:10px 0;
-    border-bottom:1px dashed #e0e8e6;
-    font-size:.92rem;
+    padding:7px 0;
+    border-bottom:1px solid #eee;
+    font-size:.88rem;
     color:var(--text);
-    display:flex; align-items:center; gap:10px;
+    display:flex; align-items:center; gap:8px;
   }
-  .price-card li::before { content:'✓'; color:var(--teal); font-weight:700; }
+  .price-card li:last-child { border:none; }
+  .price-card li::before { content:'✓'; color:var(--teal-light); font-weight:700; }
 
   /* ─── WHY US ─── */
   .why-grid {
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:60px;
+    gap:48px;
     align-items:center;
-  }
-  @media(max-width:900px){ .why-grid{grid-template-columns:1fr;} }
-  .why-visual {
-    position:relative;
-    display:flex; align-items:center; justify-content:center;
-    min-height:320px;
-  }
-  .big-icon {
-    font-size:10rem;
-    color:var(--teal-pale);
-    position:absolute;
-    opacity:.5;
-    user-select:none;
-  }
-  .why-stats {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:16px;
-    position:relative;
-    z-index:2;
-  }
-  .stat-box {
-    background:var(--cream);
-    border:1px solid #e0e8e6;
-    border-radius:var(--radius);
-    padding:26px 20px;
-    text-align:center;
-    transition:transform .3s;
-  }
-  .stat-box:hover { transform:translateY(-4px); }
-  .stat-box .num {
-    font-family:'Playfair Display',serif;
-    font-size:1.8rem;
-    color:var(--teal);
-  }
-  .stat-box .label { font-size:.82rem; color:var(--text-light); margin-top:4px; }
-  .why-list { list-style:none; }
-  .why-list li {
-    display:flex; gap:18px;
-    margin-bottom:26px;
-  }
-  .li-icon {
-    width:48px; height:48px;
-    background:var(--teal-pale);
-    border-radius:50%;
-    display:flex; align-items:center; justify-content:center;
-    font-size:1.3rem;
-    flex-shrink:0;
-  }
-  .why-list h4 { font-size:1.05rem; color:var(--dark); margin-bottom:4px; }
-  .why-list p { font-size:.9rem; color:var(--text-light); }
-
-  /* ─── CONTACT ─── */
-  .contact { background:var(--teal-pale); }
-  .contact-grid {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
     max-width:1000px;
     margin:0 auto;
   }
-  @media(max-width:800px){ .contact-grid{grid-template-columns:1fr;} }
-  .contact-info-card {
+  .why-visual {
+    background:linear-gradient(135deg,var(--teal-pale),#d4eeea);
+    border-radius:24px;
+    min-height:360px;
+    display:flex; align-items:center; justify-content:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .why-visual .big-icon { font-size:6rem; opacity:.15; position:absolute; }
+  .why-stats {
+    display:grid; grid-template-columns:1fr 1fr; gap:16px;
+    position:relative; z-index:2;
+  }
+  .stat-box {
     background:var(--white);
     border-radius:var(--radius);
-    padding:40px 36px;
+    padding:22px 18px;
+    text-align:center;
     box-shadow:var(--shadow);
+  }
+  .stat-box .num {
+    font-family:'Playfair Display',serif;
+    font-size:1.9rem;
+    color:var(--teal);
+    font-weight:700;
+  }
+  .stat-box .label { font-size:.78rem; color:var(--text-light); margin-top:4px; }
+  .why-list { list-style:none; }
+  .why-list li {
+    display:flex; gap:16px;
+    padding:18px 0;
+    border-bottom:1px solid #eee;
+  }
+  .why-list li:last-child { border:none; }
+  .why-list .li-icon {
+    width:40px; height:40px; min-width:40px;
+    background:var(--teal-pale);
+    border-radius:12px;
+    display:flex; align-items:center; justify-content:center;
+    font-size:1.1rem;
+  }
+  .why-list h4 { font-size:.95rem; color:var(--dark); margin-bottom:3px; }
+  .why-list p { font-size:.84rem; color:var(--text-light); }
+
+  /* ─── CONTACT ─── */
+  .contact { background:var(--white); }
+  .contact-grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:48px;
+    max-width:1000px;
+    margin:0 auto;
+    align-items:start;
+  }
+  .contact-info-card {
+    background:var(--teal);
+    border-radius:24px;
+    padding:44px 36px;
+    color:var(--white);
   }
   .contact-info-card h2 {
     font-family:'Playfair Display',serif;
-    font-size:1.5rem;
-    color:var(--dark);
-    margin-bottom:4px;
+    font-size:1.7rem;
+    margin-bottom:10px;
   }
-  .contact-info-card > p { font-size:.92rem; color:var(--text-light); margin-bottom:28px; }
+  .contact-info-card > p { opacity:.75; font-size:.92rem; margin-bottom:32px; }
   .contact-detail {
-    display:flex; gap:16px; margin-bottom:22px;
+    display:flex; align-items:flex-start; gap:16px;
+    margin-bottom:24px;
   }
-  .cd-icon {
-    width:44px; height:44px;
-    background:var(--teal-pale);
-    border-radius:50%;
+  .contact-detail .cd-icon {
+    background:rgba(255,255,255,.15);
+    width:44px; height:44px; min-width:44px;
+    border-radius:12px;
     display:flex; align-items:center; justify-content:center;
-    font-size:1.2rem;
-    flex-shrink:0;
+    font-size:1.1rem;
   }
-  .contact-detail h4 { font-size:.92rem; color:var(--dark); margin-bottom:2px; }
-  .contact-detail p, .contact-detail a { font-size:.88rem; color:var(--text-light); text-decoration:none; }
-  .contact-detail a:hover { color:var(--teal); }
+  .contact-detail h4 { font-size:.82rem; opacity:.65; text-transform:uppercase; letter-spacing:.8px; margin-bottom:2px; }
+  .contact-detail p { font-size:.95rem; font-weight:500; }
+  .contact-detail a { color:var(--white); text-decoration:none; border-bottom:1px solid rgba(255,255,255,.4); }
+  .contact-detail a:hover { border-color:var(--white); }
 
   .booking-card {
-    background:var(--teal);
-    border-radius:var(--radius);
-    padding:40px 36px;
-    color:var(--white);
-    box-shadow:var(--shadow);
+    background:var(--cream);
+    border-radius:24px;
+    padding:44px 36px;
   }
   .booking-card h3 {
     font-family:'Playfair Display',serif;
-    font-size:1.4rem;
+    font-size:1.5rem;
+    color:var(--dark);
     margin-bottom:8px;
   }
-  .booking-card > p { font-size:.9rem; opacity:.85; margin-bottom:28px; }
+  .booking-card > p { color:var(--text-light); font-size:.9rem; margin-bottom:28px; }
   .book-option {
     display:flex; align-items:center; gap:16px;
-    background:rgba(255,255,255,.1);
-    border-radius:12px;
-    padding:16px 18px;
-    margin-bottom:14px;
+    background:var(--white);
+    border-radius:var(--radius);
+    padding:18px 20px;
+    margin-bottom:12px;
     text-decoration:none;
-    color:var(--white);
-    transition:background .3s;
+    color:inherit;
+    border:2px solid transparent;
+    transition:border-color .3s, transform .2s, box-shadow .3s;
   }
-  .book-option:hover { background:rgba(255,255,255,.2); }
-  .bo-icon {
+  .book-option:hover { border-color:var(--teal-light); transform:translateX(4px); box-shadow:var(--shadow); }
+  .book-option .bo-icon {
     width:44px; height:44px;
-    background:rgba(255,255,255,.15);
-    border-radius:50%;
+    background:var(--teal-pale);
+    border-radius:12px;
     display:flex; align-items:center; justify-content:center;
-    font-size:1.15rem;
+    font-size:1.2rem;
   }
-  .book-option h4 { font-size:.98rem; margin-bottom:2px; }
-  .book-option p { font-size:.82rem; opacity:.8; }
-  .bo-arrow { margin-left:auto; font-size:1.2rem; opacity:.7; }
+  .book-option h4 { font-size:.93rem; color:var(--dark); }
+  .book-option p { font-size:.8rem; color:var(--text-light); margin-top:1px; }
+  .book-option .bo-arrow { margin-left:auto; color:var(--teal-light); font-size:1.1rem; }
 
   /* ─── FOOTER ─── */
   footer {
     background:var(--dark);
-    color:var(--white);
-    padding:60px 5% 30px;
+    color:rgba(255,255,255,.7);
+    padding:44px 5% 28px;
   }
   .footer-top {
-    display:grid;
-    grid-template-columns:2fr 1fr 1fr 1fr;
-    gap:40px;
-    margin-bottom:40px;
+    display:flex; flex-wrap:wrap; justify-content:space-between; gap:32px;
+    padding-bottom:32px;
+    border-bottom:1px solid rgba(255,255,255,.1);
+    margin-bottom:24px;
   }
-  @media(max-width:900px){ .footer-top{grid-template-columns:1fr 1fr;} }
-  @media(max-width:500px){ .footer-top{grid-template-columns:1fr;} }
-  .footer-brand p { font-size:.88rem; opacity:.7; margin-top:12px; max-width:280px; }
-  .footer-col h4 { font-size:.9rem; margin-bottom:18px; opacity:.9; }
-  .footer-col a {
-    display:block;
-    font-size:.86rem;
-    color:var(--white);
-    opacity:.65;
-    text-decoration:none;
-    margin-bottom:10px;
-    transition:opacity .3s;
-  }
-  .footer-col a:hover { opacity:1; }
+  .footer-brand .nav-logo { color:var(--white); }
+  .footer-brand p { font-size:.82rem; max-width:280px; margin-top:10px; line-height:1.5; }
+  .footer-col h4 { color:var(--white); font-size:.82rem; text-transform:uppercase; letter-spacing:1px; margin-bottom:14px; }
+  .footer-col a { display:block; color:rgba(255,255,255,.55); text-decoration:none; font-size:.85rem; margin-bottom:8px; transition:color .2s; }
+  .footer-col a:hover { color:var(--teal-light); }
   .footer-bottom {
-    border-top:1px solid rgba(255,255,255,.1);
-    padding-top:24px;
     display:flex; flex-wrap:wrap; justify-content:space-between;
-    font-size:.8rem;
-    opacity:.55;
+    font-size:.78rem;
+    opacity:.45;
   }
 
-  /* ─── RESPONSIVE NAV ─── */
+  /* ─── RESPONSIVE ─── */
   @media(max-width:768px){
     .nav-links { display:none; }
     .hero-deco { display:none; }
+    .why-grid, .contact-grid { grid-template-columns:1fr; }
+    .why-visual { min-height:240px; }
+    .footer-top { flex-direction:column; }
+  }
+  @media(max-width:520px){
+    .trust-bar { flex-direction:column; align-items:flex-start; gap:18px; }
+    .pricing-grid { grid-template-columns:1fr; max-width:380px; }
   }
 </style>
 </head>
@@ -507,35 +590,34 @@
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#pricing">Pricing</a></li>
-    <li><a href="#why">About</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="tel:+27815497250" class="nav-cta">📞 Call Now</a></li>
+    <li><a href="#why">About Us</a></li>
+    <li><a href="#contact" class="nav-cta">Book Now</a></li>
   </ul>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="home">
   <div class="hero-content">
-    <div class="hero-badge"><span class="badge-dot"></span> Open 24 Hours</div>
-    <h1>Healthcare That<br/>Puts <em>You</em> First</h1>
-    <p>CareFIRST Surgery is your trusted GP practice in Witbank, Emalahleni — providing quality, affordable healthcare for the whole family, around the clock.</p>
+    <div class="hero-badge"><span class="badge-dot"></span> Open 24 Hours – Walk-ins Welcome</div>
+    <h1>Your Health,<br/><em>Our Priority</em></h1>
+    <p>CareFIRST Surgery – a trusted family practice in Witbank, Emalahleni. Professional care, flexible fees, and a warm team ready to help you every day of the year.</p>
     <div class="hero-btns">
-      <a href="tel:+27815497250" class="btn-primary">📞 Call to Book</a>
-      <a href="#services" class="btn-secondary">Our Services</a>
+      <a href="tel:+27815497250" class="btn-primary">📞 Call Us Now</a>
+      <a href="#services" class="btn-secondary">Our Services ↓</a>
     </div>
   </div>
   <div class="hero-deco">
     <div class="hero-deco-inner">
-      <span class="hero-icon">🏥</span>
+      <div class="hero-icon">🏥</div>
     </div>
   </div>
 </section>
 
 <!-- TRUST BAR -->
 <div class="trust-bar">
-  <div class="trust-item"><div class="trust-icon">🕐</div> Open 24/7</div>
-  <div class="trust-item"><div class="trust-icon">💳</div> All Medical Aids Accepted</div>
-  <div class="trust-item"><div class="trust-icon">💰</div> Community Rate Pricing</div>
+  <div class="trust-item"><div class="trust-icon">🕐</div> Open 24 Hours, 7 Days a Week</div>
+  <div class="trust-item"><div class="trust-icon">🏥</div> All Medical Aids Welcome</div>
+  <div class="trust-item"><div class="trust-icon">💛</div> Community Rate Pricing</div>
   <div class="trust-item"><div class="trust-icon">🚶</div> Walk-ins Welcome</div>
 </div>
 
