@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CareFIRST Surgery Services - General consultations, chronic disease management, vaccinations, minor surgery, medical certificates, women's health & more in Witbank, eMalahleni.">
+    <meta name="keywords" content="doctor Witbank, GP eMalahleni, medical services, chronic disease, diabetes, hypertension, vaccinations, minor surgery, sick note, medical certificate, women's health, antenatal care">
+    <title>Our Services | CareFIRST Surgery - Dr V. Prefa &amp; Partners | Witbank</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background: #f8f9fa;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1a5276 0%, #0e3d5a 100%);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            border: 3px solid white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: #e74c3c;
+            font-weight: bold;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .logo h1 {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .logo h1 span {
+            color: #e74c3c;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            background: rgba(255,255,255,0.15);
+        }
+
+        nav a.active {
+            border-bottom: 2px solid #e74c3c;
+        }
+
+        .call-btn {
+            background: #e74c3c !important;
+            color: white !important;
+            font-weight: 600 !important;
+            padding: 10px 20px !important;
+            border-radius: 25px !important;
+        }
+
+        .call-btn:hover {
+            background: #c0392b !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a5276 0%, #0e3d5a 50%, #154360 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(231, 76, 60, 0.9);
+            padding: 10px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        /* Services Grid */
+        .services-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-heading h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: #1a5276;
+            margin-bottom: 10px;
+        }
+
+        .section-heading p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 16px;
+            padding: 35px 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+            border-top: 4px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+            border-top-color: #1a5276;
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1a5276, #2980b9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .service-card h4 {
+            font-size: 20px;
+            color: #1a5276;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-list li {
+            padding: 6px 0;
+            font-size: 14px;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .service-list li::before {
+            content: "✓";
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Pricing Banner */
+        .pricing-banner {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .pricing-banner h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .pricing-banner .price {
+            font-size: 64px;
+            font-weight: 700;
+            margin: 15px 0;
+        }
+
+        .pricing-banner .price span {
+            font-size: 24px;
+            opacity: 0.8;
+        }
+
+        .pricing-banner p {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 25px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #e74c3c;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 18px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        /* Hours Section */
+        .hours-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hours-section h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: #1a5276;
+            margin-bottom: 30px;
+        }
+
+        .hours-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .hours-item {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .hours-item .day {
+            font-weight: 600;
+            color: #1a5276;
+            font-size: 16px;
+        }
+
+        .hours-item .time {
+            color: #666;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .hours-item.open-now {
+            border-left: 4px solid #27ae60;
+        }
+
+        /* Footer */
+        footer {
+            background: #0e3d5a;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #e74c3c;
+        }
+
+        .footer-col p, .footer-col a {
+            color: rgba(255,255,255,0.8);
+            font-size: 14px;
+            text-decoration: none;
+            line-height: 2;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 20px;
+            background: #0a2d42;
+            color: rgba(255,255,255,0.5);
+            font-size: 13px;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+            nav {
+                gap: 10px;
+            }
+            .hero h2 {
+                font-size: 28px;
+            }
+            .pricing-banner .price {
+                font-size: 48px;
+            }
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">+</div>
+                <h1>Care<span>FIRST</span> Surgery</h1>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Services.html" class="active">Services</a>
+                <a href="Booking.html">Book Now</a>
+                <a href="tel:+27815497250" class="call-btn">📞 +27 81 549 7250</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h2>Our Medical Services</h2>
+        <p>Comprehensive, affordable healthcare for you and your family in Witbank, eMalahleni. Walk-ins welcome — no appointment needed.</p>
+        <div class="hero-badge">🏥 Serving eMalahleni for Over 10 Years</div>
+    </section>
+
+    <!-- Main Services -->
+    <section class="services-section">
+        <div class="section-heading">
+            <h3>What We Offer</h3>
+            <p>Professional medical care across a wide range of health needs</p>
+        </div>
+
+        <div class="services-grid">
+
+            <!-- Card 1: General Consultations -->
+            <div class="service-card">
+                <div class="service-icon">🩺</div>
+                <h4>General Consultations</h4>
+                <p>See an experienced GP for any health concern. Fast, thorough, and affordable consultations for the whole family.</p>
+                <ul class="service-list">
+                    <li>Adult & child consultations</li>
+                    <li>Flu, coughs, infections & fevers</li>
+                    <li>Allergies & skin conditions</li>
+                    <li>Stomach & digestive problems</li>
+                    <li>Headaches & body pains</li>
+                    <li>Referral letters to specialists</li>
+                </ul>
+            </div>
+
+            <!-- Card 2: Chronic Disease Management -->
+            <div class="service-card">
+                <div class="service-icon">❤️</div>
+                <h4>Chronic Disease Management</h4>
+                <p>Ongoing care and monitoring for long-term conditions. We help you manage your health every step of the way.</p>
+                <ul class="service-list">
+                    <li>Diabetes (sugar) management</li>
+                    <li>High blood pressure / hypertension</li>
+                    <li>Cholesterol management</li>
+                    <li>Asthma & respiratory conditions</li>
+                    <li>HIV/AIDS care & ART management</li>
+                    <li>Epilepsy & thyroid disorders</li>
+                </ul>
+            </div>
+
+            <!-- Card 3: Women's Health -->
+            <div class="service-card">
+                <div class="service-icon">👩</div>
+                <h4>Women's Health</h4>
+                <p>Dedicated care for women at every stage of life, from family planning to pregnancy and beyond.</p>
+                <ul class="service-list">
+                    <li>Pregnancy testing & antenatal care</li>
+                    <li>Family planning & contraception</li>
+                    <li>Pap smear screening</li>
+                    <li>Breast examinations</li>
+                    <li>Menstrual & hormonal concerns</li>
+                    <li>UTI & vaginal infections</li>
+                </ul>
+            </div>
+
+            <!-- Card 4: Children's Health -->
+            <div class="service-card">
+                <div class="service-icon">👶</div>
+                <h4>Children's Health</h4>
+                <p>Caring for your little ones from birth through childhood with gentle, professional paediatric services.</p>
+                <ul class="service-list">
+                    <li>Baby immunisations & vaccinations</li>
+                    <li>Growth monitoring</li>
+                    <li>Childhood illnesses & infections</li>
+                    <li>Ear, nose & throat problems</li>
+                    <li>Skin rashes & allergies</li>
+                    <li>School health forms</li>
+                </ul>
+            </div>
+
+            <!-- Card 5: Minor Surgery & Procedures -->
+            <div class="service-card">
+                <div class="service-icon">🔬</div>
+                <h4>Minor Surgery & Procedures</h4>
+                <p>Quick in-office procedures performed by our experienced medical team. No hospital visit needed.</p>
+                <ul class="service-list">
+                    <li>Wound stitching & treatment</li>
+                    <li>Abscess drainage</li>
+                    <li>Ingrown toenail removal</li>
+                    <li>Ear syringing (wax removal)</li>
+                    <li>Burn treatment & dressings</li>
+                    <li>Foreign body removal</li>
+                </ul>
+            </div>
+
+            <!-- Card 6: Medical Certificates & Workplace -->
+            <div class="service-card">
+                <div class="service-icon">📋</div>
+                <h4>Medical Certificates & Workplace Health</h4>
+                <p>Fast, professional documentation for your employer, school, or legal requirements.</p>
+                <ul class="service-list">
+                    <li>Sick notes / medical certificates</li>
+                    <li>Medical fitness certificates</li>
+                    <li>Pre-employment medicals</li>
+                    <li>Driver's medical (PrDP)</li>
+                    <li>Occupational health assessments</li>
+                    <li>Insurance & disability forms</li>
+                </ul>
+            </div>
+
+            <!-- Card 7: Health Screenings & Tests -->
+            <div class="service-card">
+                <div class="service-icon">🧪</div>
+                <h4>Health Screenings & Tests</h4>
+                <p>Preventive health checks and diagnostic testing to catch problems early and keep you healthy.</p>
+                <ul class="service-list">
+                    <li>Blood tests (sugar, cholesterol, full blood count)</li>
+                    <li>Blood pressure monitoring</li>
+                    <li>STI / STD testing</li>
+                    <li>Pregnancy tests</li>
+                    <li>Urine analysis</li>
+                    <li>Flu vaccinations (seasonal)</li>
+                </ul>
+            </div>
+
+            <!-- Card 8: TB Treatment -->
+            <div class="service-card">
+                <div class="service-icon">🫁</div>
+                <h4>TB Screening & Treatment</h4>
+                <p>Complete tuberculosis care from screening to treatment completion. Confidential and compassionate support.</p>
+                <ul class="service-list">
+                    <li>TB screening & testing</li>
+                    <li>Sputum collection</li>
+                    <li>DOTS treatment programme</li>
+                    <li>Treatment monitoring</li>
+                    <li>Contact tracing support</li>
+                    <li>TB/HIV co-management</li>
+                </ul>
+            </div>
+
+            <!-- Card 9: Sports & Injuries -->
+            <div class="service-card">
+                <div class="service-icon">🏃</div>
+                <h4>Sports & Injury Care</h4>
+                <p>Prompt treatment for injuries, sprains, and musculoskeletal problems to get you back on your feet.</p>
+                <ul class="service-list">
+                    <li>Sports injuries assessment</li>
+                    <li>Sprains & strains</li>
+                    <li>Back & neck pain</li>
+                    <li>Joint pain & arthritis</li>
+                    <li>Work-related injuries</li>
+                    <li>Physiotherapy referrals</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pricing Banner -->
+    <section class="pricing-banner">
+        <h3>Affordable Healthcare For Everyone</h3>
+        <div class="price">R150 <span>/ consultation</span></div>
+        <p>No medical aid? No problem. Quality care at prices you can afford.<br>Walk in today — no appointment needed.</p>
+        <a href="tel:+27815497250" class="cta-button">📞 Call Now: +27 81 549 7250</a>
+    </section>
+
+    <!-- Operating Hours -->
+    <section class="hours-section">
+        <h3>Operating Hours</h3>
+        <div class="hours-grid">
+            <div class="hours-item">
+                <div class="day">Monday – Friday</div>
+                <div class="time">08:00 – 17:00</div>
+            </div>
+            <div class="hours-item">
+                <div class="day">Saturday</div>
+                <div class="time">08:00 – 13:00</div>
+            </div>
+            <div class="hours-item">
+                <div class="day">Sunday & Public Holidays</div>
+                <div class="time">Closed</div>
+            </div>
+        </div>
+        <p style="margin-top: 25px; color: #666; font-size: 14px;">
+            📍 1 Christiaan De Wet St, eMalahleni (Witbank), Mpumalanga
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>CareFIRST Surgery</h4>
+                <p>Dr V. Prefa & Partners</p>
+                <p>Trusted healthcare in Witbank, eMalahleni since 2014. Your health is our priority.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="Services.html">Our Services</a></p>
+                <p><a href="Booking.html">Book Appointment</a></p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>📞 <a href="tel:+27815497250">+27 81 549 7250</a></p>
+                <p>📍 1 Christiaan De Wet St,<br>eMalahleni (Witbank),<br>Mpumalanga, South Africa</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        &copy; 2025 CareFIRST Surgery. All Rights Reserved. | Dr V. Prefa & Partners
+    </div>
+
+</body>
+</html>
