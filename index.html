@@ -77,6 +77,32 @@
             text-decoration: none;
             font-size: 18px;
         }
+        nav {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .nav-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--white);
+            text-decoration: none;
+        }
+        .nav-links { display: flex; gap: 25px; flex-wrap: wrap; }
+        .nav-links a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover, .nav-links a.active { color: var(--white); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
         .hero {
             padding: 70px 20px;
             text-align: center;
@@ -283,6 +309,17 @@
             opacity: 0.9;
             font-size: 16px;
         }
+        .footer-links {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .footer-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-size: 15px;
+            margin: 0 12px;
+        }
+        .footer-links a:hover { color: var(--white); text-decoration: underline; }
         .social-links {
             margin-top: 15px;
         }
@@ -335,6 +372,8 @@
             .services-grid {
                 grid-template-columns: 1fr;
             }
+            nav { justify-content: center; text-align: center; }
+            .nav-links { justify-content: center; }
         }
     </style>
 </head>
@@ -344,6 +383,15 @@
             📍 Witbank/Emalahleni, Mpumalanga | 
             <a href="tel:+27815497250" onclick="return gtag_report_conversion('tel:+27815497250')">📞 +27 81 549 7250</a>
         </div>
+        <nav>
+            <a href="index.html" class="nav-logo">CareFIRST Surgery</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="policy.html">Privacy Policy</a>
+            </div>
+        </nav>
         <div class="hero">
             <div class="medical-cross">
                 <span>+</span>
@@ -455,6 +503,11 @@
 
     <footer>
         <p>&copy; 2025 CareFIRST Surgery – Dr. V. Prefa and Partners. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="policy.html">Privacy Policy</a>
+        </div>
         <div class="social-links">
             <a href="tel:+27815497250" onclick="return gtag_report_conversion('tel:+27815497250')" title="Call Us">📞</a>
             <a href="mailto:info@carefirstsurgery.co.za" title="Email Us">📧</a>
