@@ -11,220 +11,47 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <!-- SEO Meta Tags -->
     <title>Book an Appointment | CareFIRST Surgery | Witbank, eMalahleni</title>
     <meta name="description" content="Book your appointment at CareFIRST Surgery in Witbank, eMalahleni. Call or WhatsApp us. Walk-ins welcome."/>
     <meta name="robots" content="index, follow"/>
     <link rel="canonical" href="https://23396784.github.io/carefirst-surgery-/Booking.html" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
     <style>
-      :root {
-        --teal:      #0d7a6f;
-        --teal-light:#12a899;
-        --teal-pale: #e6f7f5;
-        --cream:     #fafaf8;
-        --dark:      #1a2c2a;
-        --mid:       #3d5a56;
-        --accent:    #f0a942;
-        --text:      #2d3e3c;
-        --text-light:#6b8a85;
-        --white:     #ffffff;
-        --shadow:    0 4px 24px rgba(13,122,111,.12);
-        --radius:    14px;
-      }
+      :root { --teal:#0d7a6f; --teal-light:#12a899; --teal-pale:#e6f7f5; --cream:#fafaf8; --dark:#1a2c2a; --mid:#3d5a56; --accent:#f0a942; --text:#2d3e3c; --text-light:#6b8a85; --white:#ffffff; --shadow:0 4px 24px rgba(13,122,111,.12); --radius:14px; }
       * { margin:0; padding:0; box-sizing:border-box; }
       html { scroll-behavior:smooth; }
-      body {
-        font-family:'DM Sans',sans-serif;
-        background:var(--cream);
-        color:var(--text);
-        line-height:1.6;
-        min-height:100vh;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
-        padding:20px;
-      }
-
-      .booking-container {
-        background:var(--white);
-        border-radius:var(--radius);
-        box-shadow:var(--shadow);
-        padding:50px 40px;
-        max-width:500px;
-        width:100%;
-        text-align:center;
-      }
-
-      .logo {
-        font-family:'Playfair Display',serif;
-        font-size:1.8rem;
-        color:var(--teal);
-        margin-bottom:10px;
-      }
+      body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--text); line-height:1.6; min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px; }
+      .booking-container { background:var(--white); border-radius:var(--radius); box-shadow:var(--shadow); padding:50px 40px; max-width:500px; width:100%; text-align:center; }
+      .logo { font-family:'Playfair Display',serif; font-size:1.8rem; color:var(--teal); margin-bottom:10px; }
       .logo span { color:var(--accent); }
-
-      .tagline {
-        font-size:0.9rem;
-        color:var(--text-light);
-        margin-bottom:30px;
-      }
-
-      h1 {
-        font-family:'Playfair Display',serif;
-        font-size:1.8rem;
-        color:var(--dark);
-        margin-bottom:10px;
-      }
-
-      .subtitle {
-        color:var(--text-light);
-        font-size:1rem;
-        margin-bottom:35px;
-      }
-
-      .booking-btn {
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        gap:12px;
-        width:100%;
-        padding:18px 24px;
-        border-radius:50px;
-        font-size:1.1rem;
-        font-weight:600;
-        text-decoration:none;
-        margin-bottom:16px;
-        transition:transform 0.25s, box-shadow 0.25s;
-        cursor:pointer;
-        border:none;
-      }
-
-      .btn-whatsapp {
-        background:#25D366;
-        color:var(--white);
-        box-shadow:0 6px 20px rgba(37,211,102,0.3);
-      }
-      .btn-whatsapp:hover {
-        transform:translateY(-2px);
-        box-shadow:0 8px 28px rgba(37,211,102,0.4);
-      }
-
-      .btn-call {
-        background:var(--teal);
-        color:var(--white);
-        box-shadow:0 6px 20px rgba(13,122,111,0.3);
-      }
-      .btn-call:hover {
-        transform:translateY(-2px);
-        box-shadow:0 8px 28px rgba(13,122,111,0.4);
-      }
-
-      .btn-walkin {
-        background:var(--white);
-        color:var(--teal);
-        border:2px solid var(--teal);
-      }
-      .btn-walkin:hover {
-        background:var(--teal-pale);
-        transform:translateY(-2px);
-      }
-
-      .divider {
-        display:flex;
-        align-items:center;
-        margin:25px 0;
-        color:var(--text-light);
-        font-size:0.85rem;
-      }
-      .divider::before, .divider::after {
-        content:'';
-        flex:1;
-        height:1px;
-        background:#e0e8e6;
-      }
-      .divider span {
-        padding:0 15px;
-      }
-
-      .info-box {
-        background:var(--teal-pale);
-        border-radius:12px;
-        padding:20px;
-        margin-top:25px;
-      }
-      .info-box h3 {
-        font-size:0.95rem;
-        color:var(--teal);
-        margin-bottom:10px;
-      }
-      .info-item {
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        gap:8px;
-        font-size:0.9rem;
-        color:var(--text);
-        margin-bottom:6px;
-      }
+      .tagline { font-size:0.9rem; color:var(--text-light); margin-bottom:30px; }
+      h1 { font-family:'Playfair Display',serif; font-size:1.8rem; color:var(--dark); margin-bottom:10px; }
+      .subtitle { color:var(--text-light); font-size:1rem; margin-bottom:35px; }
+      .booking-btn { display:flex; align-items:center; justify-content:center; gap:12px; width:100%; padding:18px 24px; border-radius:50px; font-size:1.1rem; font-weight:600; text-decoration:none; margin-bottom:16px; transition:transform 0.25s, box-shadow 0.25s; cursor:pointer; border:none; }
+      .btn-whatsapp { background:#25D366; color:var(--white); box-shadow:0 6px 20px rgba(37,211,102,0.3); }
+      .btn-whatsapp:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(37,211,102,0.4); }
+      .btn-call { background:var(--teal); color:var(--white); box-shadow:0 6px 20px rgba(13,122,111,0.3); }
+      .btn-call:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(13,122,111,0.4); }
+      .btn-walkin { background:var(--white); color:var(--teal); border:2px solid var(--teal); }
+      .btn-walkin:hover { background:var(--teal-pale); transform:translateY(-2px); }
+      .divider { display:flex; align-items:center; margin:25px 0; color:var(--text-light); font-size:0.85rem; }
+      .divider::before, .divider::after { content:''; flex:1; height:1px; background:#e0e8e6; }
+      .divider span { padding:0 15px; }
+      .info-box { background:var(--teal-pale); border-radius:12px; padding:20px; margin-top:25px; }
+      .info-box h3 { font-size:0.95rem; color:var(--teal); margin-bottom:10px; }
+      .info-item { display:flex; align-items:center; justify-content:center; gap:8px; font-size:0.9rem; color:var(--text); margin-bottom:6px; }
       .info-item:last-child { margin-bottom:0; }
-
-      .back-link {
-        margin-top:25px;
-        font-size:0.9rem;
-      }
-      .back-link a {
-        color:var(--teal);
-        text-decoration:none;
-      }
-      .back-link a:hover {
-        text-decoration:underline;
-      }
-
-      .hours-badge {
-        display:inline-flex;
-        align-items:center;
-        gap:6px;
-        background:var(--accent);
-        color:var(--dark);
-        font-size:0.8rem;
-        font-weight:600;
-        padding:6px 14px;
-        border-radius:50px;
-        margin-bottom:25px;
-      }
-
-      .hours-grid {
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:8px;
-        margin-top:12px;
-        text-align:left;
-      }
-      .hours-row {
-        display:flex;
-        justify-content:space-between;
-        font-size:0.85rem;
-        color:var(--text);
-        padding:6px 0;
-        border-bottom:1px solid rgba(13,122,111,0.1);
-        grid-column: span 2;
-      }
+      .back-link { margin-top:25px; font-size:0.9rem; }
+      .back-link a { color:var(--teal); text-decoration:none; }
+      .back-link a:hover { text-decoration:underline; }
+      .hours-badge { display:inline-flex; align-items:center; gap:6px; background:var(--accent); color:var(--dark); font-size:0.8rem; font-weight:600; padding:6px 14px; border-radius:50px; margin-bottom:25px; }
+      .hours-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:12px; text-align:left; }
+      .hours-row { display:flex; justify-content:space-between; font-size:0.85rem; color:var(--text); padding:6px 0; border-bottom:1px solid rgba(13,122,111,0.1); grid-column: span 2; }
       .hours-row .day { font-weight:500; }
       .hours-row .time { color:var(--teal); font-weight:600; }
-
-      @media(max-width:500px) {
-        .booking-container {
-          padding:35px 25px;
-        }
-        h1 { font-size:1.5rem; }
-        .booking-btn { font-size:1rem; padding:16px 20px; }
-      }
+      @media(max-width:500px) { .booking-container { padding:35px 25px; } h1 { font-size:1.5rem; } .booking-btn { font-size:1rem; padding:16px 20px; } }
     </style>
 </head>
 <body>
@@ -236,55 +63,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="booking-container">
   <div class="logo">Care<span>FIRST</span> Surgery</div>
   <p class="tagline">Dr. V. Prefa & Partners • Witbank, eMalahleni</p>
-
   <div class="hours-badge">🕐 Walk-ins Welcome</div>
-
   <h1>Book Your Appointment</h1>
   <p class="subtitle">Choose how you'd like to reach us</p>
-
-  <a href="https://wa.me/27815497250?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20at%20CareFIRST%20Surgery" class="booking-btn btn-whatsapp">
-    💬 WhatsApp Us
-  </a>
-
-  <a href="tel:+27815497250" class="booking-btn btn-call">
-    📞 Call Us
-  </a>
-
+  <a href="https://wa.me/27815497250?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20at%20CareFIRST%20Surgery" class="booking-btn btn-whatsapp">💬 WhatsApp Us</a>
+  <a href="tel:+27815497250" class="booking-btn btn-call">📞 Call Us</a>
   <div class="divider"><span>or</span></div>
-
-  <a href="https://23396784.github.io/carefirst-surgery-/#contact" class="booking-btn btn-walkin">
-    🚶 Walk In – No Appointment Needed
-  </a>
-
+  <a href="https://23396784.github.io/carefirst-surgery-/#contact" class="booking-btn btn-walkin">🚶 Walk In – No Appointment Needed</a>
   <div class="info-box">
     <h3>📍 Visit Us</h3>
     <div class="info-item">Mujahideen Building Shop 5, 24 Daniel Malan Street</div>
     <div class="info-item">Witbank/Emalahleni, Mpumalanga</div>
     <div class="info-item"><strong>📞 +27 81 549 7250</strong></div>
     <div class="hours-grid">
-      <div class="hours-row">
-        <span class="day">Monday – Friday</span>
-        <span class="time">09:00 – 17:00</span>
-      </div>
-      <div class="hours-row">
-        <span class="day">Saturday</span>
-        <span class="time">09:00 – 15:00</span>
-      </div>
-      <div class="hours-row">
-        <span class="day">Sunday</span>
-        <span class="time">09:00 – 14:00</span>
-      </div>
-      <div class="hours-row">
-        <span class="day">Public Holidays</span>
-        <span class="time">09:00 – 14:00</span>
-      </div>
+      <div class="hours-row"><span class="day">Monday – Friday</span><span class="time">09:00 – 17:00</span></div>
+      <div class="hours-row"><span class="day">Saturday</span><span class="time">09:00 – 15:00</span></div>
+      <div class="hours-row"><span class="day">Sunday</span><span class="time">09:00 – 14:00</span></div>
+      <div class="hours-row"><span class="day">Public Holidays</span><span class="time">09:00 – 14:00</span></div>
     </div>
   </div>
-
-  <div class="back-link">
-    <a href="https://23396784.github.io/carefirst-surgery-/">← Back to Main Website</a>
-  </div>
+  <div class="back-link"><a href="https://23396784.github.io/carefirst-surgery-/">← Back to Main Website</a></div>
 </div>
-
 </body>
 </html>
