@@ -43,6 +43,7 @@ CareFIRST Surgery is a general medical practice led by **Dr. V. Prefa and Partne
 | 📞 Phone | [+27 81 549 7250](tel:+27815497250)      |
 | 📍 Address | Witbank/Emalahleni, Mpumalanga, South Africa |
 | 📧 Email | [info@carefirstsurgery.co.za](mailto:info@carefirstsurgery.co.za) |
+| 📧 Email | [carefirstmedical788@gmail.com](mailto:carefirstmedical788@gmail.com)|
 
 ---
 
