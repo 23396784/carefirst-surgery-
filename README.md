@@ -31,8 +31,8 @@ CareFIRST Surgery is a general medical practice led by **Dr. V. Prefa and Partne
 | Day                      | Hours           |
 |--------------------------|-----------------|
 | Monday – Friday          | 09:00 – 17:00  |
-| Saturday                 | 09:00 – 13:00  |
-| Sunday & Public Holidays | Closed          |
+| Saturday                 | 09:00 – 15:00  |
+| Sunday & Public Holidays | 09:00 - 14:00          |
 
 ---
 
