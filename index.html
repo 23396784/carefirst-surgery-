@@ -72,6 +72,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .about-text { font-size: 18px; color: var(--gray); line-height: 1.8; }
         .cta-button { display: inline-block; background: var(--accent); color: var(--white); padding: 16px 40px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 18px; margin-top: 25px; transition: transform 0.2s, box-shadow 0.2s; }
         .cta-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(230, 57, 70, 0.4); }
+
+        /* Doctor Profile */
+        .doctor-profile { display: grid; grid-template-columns: 280px 1fr; gap: 35px; align-items: center; }
+        .doctor-photo-placeholder {
+            width: 280px; height: 320px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+        }
+        .doctor-photo-placeholder .avatar { font-size: 80px; margin-bottom: 12px; }
+        .doctor-photo-placeholder p { font-size: 13px; opacity: 0.7; margin-top: 8px; }
+        .doctor-info h3 { font-family: 'Playfair Display', serif; font-size: 26px; color: var(--primary); margin-bottom: 5px; }
+        .doctor-info .title { color: var(--accent); font-weight: 700; font-size: 15px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; }
+        .doctor-info p { font-size: 17px; color: var(--gray); line-height: 1.7; margin-bottom: 12px; }
+        .qualifications { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+        .qual-badge { background: var(--light); border: 1px solid #ddd; padding: 6px 16px; border-radius: 50px; font-size: 14px; font-weight: 600; color: var(--primary); }
+
+        /* Testimonials */
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
+        .testimonial-card {
+            background: var(--light);
+            border-radius: 12px;
+            padding: 25px;
+            border-left: 4px solid var(--primary);
+            position: relative;
+        }
+        .testimonial-card .quote { font-size: 17px; color: var(--dark); line-height: 1.7; font-style: italic; margin-bottom: 15px; }
+        .testimonial-card .quote::before { content: '"'; font-size: 40px; color: var(--primary); font-family: serif; line-height: 0; position: relative; top: 15px; margin-right: 5px; }
+        .testimonial-author { display: flex; align-items: center; gap: 10px; }
+        .testimonial-avatar { width: 40px; height: 40px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 700; font-size: 16px; }
+        .testimonial-author .name { font-weight: 700; color: var(--dark); font-size: 15px; }
+        .testimonial-author .location { font-size: 13px; color: var(--gray); }
+        .stars { color: #f0a942; font-size: 16px; margin-bottom: 10px; }
+
+        @media (max-width: 600px) {
+            .doctor-profile { grid-template-columns: 1fr; justify-items: center; }
+            .doctor-photo-placeholder { width: 200px; height: 240px; }
+        }
         .map-container { margin-top: 20px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
         .map-container iframe { width: 100%; height: 300px; border: none; }
 
@@ -184,6 +228,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="nav-links">
                 <a href="index.html" class="active">Home</a>
                 <a href="about.html">About</a>
+                <a href="after-hours.html">After-Hours</a>
                 <a href="contact.html">Contact</a>
                 <a href="policy.html">Privacy Policy</a>
             </div>
@@ -306,6 +351,61 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </section>
 
+        <!-- MEET YOUR DOCTOR -->
+        <section>
+            <h2>Meet Your Doctor</h2>
+            <div class="doctor-profile">
+                <div class="doctor-photo-placeholder">
+                    <div class="avatar">👨‍⚕️</div>
+                    <strong>Dr. V. Prefa</strong>
+                    <p>Photo coming soon</p>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr. Victor Prefa</h3>
+                    <div class="title">Lead Practitioner</div>
+                    <p>With over 17 years of clinical experience across Nigeria, Lesotho, and South Africa, Dr. Prefa brings a wealth of medical knowledge and a deep commitment to patient-centred care. He leads the CareFIRST Surgery team with a focus on compassionate, thorough consultations for every patient.</p>
+                    <p>HPCSA registered and committed to continuous professional development, Dr. Prefa combines traditional clinical expertise with modern healthcare approaches including virtual consultations.</p>
+                    <div class="qualifications">
+                        <span class="qual-badge">MBBS</span>
+                        <span class="qual-badge">MPH</span>
+                        <span class="qual-badge">HPCSA Registered</span>
+                        <span class="qual-badge">17+ Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PATIENT TESTIMONIALS -->
+        <section>
+            <h2>What Our Patients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">Very professional and caring doctor. He takes time to listen and explain everything. I always feel comfortable bringing my whole family here.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">T</div>
+                        <div><div class="name">Thandi M.</div><div class="location">Emalahleni</div></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">Best GP in Witbank. The after-hours virtual consultation saved me a trip to the emergency room. Highly recommend this practice.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">S</div>
+                        <div><div class="name">Sipho K.</div><div class="location">Witbank</div></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">Clean facility, friendly staff, and the doctor is thorough. I've been coming here for my chronic medication and I'm very happy with the service.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">N</div>
+                        <div><div class="name">Nomsa P.</div><div class="location">Emalahleni</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section>
             <h2>Consulting Hours</h2>
             <div class="hours-grid">
@@ -366,7 +466,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <footer>
         <p>&copy; 2025 CareFIRST Surgery – Dr. V. Prefa and Partners. All rights reserved.</p>
         <div class="footer-links">
-            <a href="about.html">About Us</a>
+            <a href="index.html">Home</a><a href="about.html">About Us</a><a href="after-hours.html">After-Hours</a>
             <a href="contact.html">Contact</a>
             <a href="policy.html">Privacy Policy</a>
         </div>
